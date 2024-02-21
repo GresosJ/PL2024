@@ -1,6 +1,6 @@
 import re
 
-# Exemplo de uso
+# Exemplo
 markdown_input = """
 # Título
 Este é um **exemplo** de conversor de *Markdown* para HTML.
@@ -45,7 +45,7 @@ def numberedList(text):
     numbered_list_exp = re.compile(r'^\d+\.\s(.*)')
     in_numbered_list = False
 
-    linhas_processadas = []
+    processed_lines = []
 
     for line in text.splitlines():
         subs = numbered_list_exp.subn(r'<li>\1</li>', line)
@@ -54,19 +54,19 @@ def numberedList(text):
             # Sair do "modo lista numerada"
             if subs[1] == 0:
                 in_numbered_list = False
-                linhas_processadas.append('</ol>')
+                processed_lines.append('</ol>')
             else:
                 line = "    " + subs[0]
         else:
             # Entrar no "modo lista numerada"
             if subs[1] != 0:
                 in_numbered_list = True
-                linhas_processadas.append('<ol>')
+                processed_lines.append('<ol>')
                 line = "    " + subs[0]
 
-        linhas_processadas.append(line)
+        processed_lines.append(line)
 
-    return '\n'.join(linhas_processadas)
+    return '\n'.join(processed_lines)
 
 def main():
     print(mdHTML(markdown_input))
