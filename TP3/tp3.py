@@ -4,7 +4,7 @@ def process_text(text):
     soma = 0
     on = True
 
-    for match in re.findall(r'(\d+|on|off|=)', text, flags=re.IGNORECASE):
+    for match in re.findall(r'(on|off|=|\d+)', text, flags=re.IGNORECASE):
         if match.isdigit():
             if on:
                 soma += int(match)

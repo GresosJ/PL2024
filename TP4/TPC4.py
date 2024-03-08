@@ -32,10 +32,10 @@ def t_newline(t):
 def t_error(t):
     print(f"Caractere ilegal '{t.value[0]}' na linha {t.lineno}")
     t.lexer.skip(1)
-    
+
 def main():
     lexer = lex.lex()
-    codigo = "select id, nome, *, salario FROM empregados WHERE salario >= 820;"
+    codigo = "select id, nome, salario FROM empregados WHERE salario >= 820;"
     lexer.input(codigo)
 
     while True:
