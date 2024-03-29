@@ -87,6 +87,8 @@ class StockSystem:
                 if produto['cod'] == token.value:
                     if self.saldo_atual >= produto['preco']:
                         self.saldo_atual -= produto['preco']
+                        produto['quant'] -= 1
+                        print(f"Pode retirar o produto dispensado {produto['nome']}")
                         print(f"Saldo = {self.valor_para_moedas(self.saldo_atual)}")
                     else:
                         print("Saldo insuficiente para satisfazer o seu pedido")
