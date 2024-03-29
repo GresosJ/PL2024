@@ -1,0 +1,62 @@
+[
+  {
+    "cod": "A23",
+    "nome": "\u00e1gua 0.5L",
+    "quant": 8,
+    "preco": 0.55
+  },
+  {
+    "cod": "B12",
+    "nome": "refrigerante lata",
+    "quant": 15,
+    "preco": 0.9
+  },
+  {
+    "cod": "C45",
+    "nome": "kinder bueno",
+    "quant": 20,
+    "preco": 0.9
+  },
+  {
+    "cod": "D67",
+    "nome": "redbull",
+    "quant": 10,
+    "preco": 1.0
+  },
+  {
+    "cod": "E89",
+    "nome": "bolacha",
+    "quant": 25,
+    "preco": 0.5
+  },
+  {
+    "cod": "F34",
+    "nome": "sorvete de chocolate",
+    "quant": 5,
+    "preco": 2.0
+  },
+  {
+    "cod": "G56",
+    "nome": "bolacha de agua e sal",
+    "quant": 30,
+    "preco": 0.3
+  },
+  {
+    "cod": "H78",
+    "nome": "agua com gas 0.5L",
+    "quant": 12,
+    "preco": 0.6
+  },
+  {
+    "cod": "I90",
+    "nome": "m&ms",
+    "quant": 18,
+    "preco": 0.7
+  },
+  {
+    "cod": "J11",
+    "nome": "kinder delice",
+    "quant": 7,
+    "preco": 0.7
+  }
+]
