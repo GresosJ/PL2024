@@ -48,4 +48,4 @@ Pode retirar o troco: 1x 50c.
 Até à próxima
 ```
 
-O estado da maquina esta guardado num ficheiro de texto chamado "stock.json". Este ficheiro é carregado no inicio do programa e atualizado sempre que o utilizador carrega o stock ou retira um produto.
+O estado da maquina esta guardado num ficheiro de texto chamado [stock.json](./stock.json). Este ficheiro é carregado no inicio do programa e atualizado sempre que o utilizador carrega o stock ou retira um produto.
